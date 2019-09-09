@@ -1,0 +1,35 @@
+﻿@model Library.Models.Books
+@{
+    ViewData["Title"] = "Status1";
+}
+
+<h1>Status1</h1>
+
+<div>
+    <h4>BookDetails</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ISBN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Register)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Register)
+        </dd>
+    </dl>
+</div>
+<div>
+   
+    <a asp-action="Index">Back to List</a>
+</div>
